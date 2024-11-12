@@ -1,0 +1,30 @@
+      .lista-pytan {
+        counter-reset: pytanie;
+      }
+
+      .pytanie {
+        counter-increment: pytanie;
+        margin-bottom: 20px;
+      }
+
+      .pytanie::before {
+        content: counter(pytanie) ". ";
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .odpowiedzi {
+        counter-reset: odpowiedz;
+        padding-left: 20px;
+        margin-top: 10px;
+      }
+
+      .odpowiedz {
+        counter-increment: odpowiedz;
+        margin-bottom: 5px;
+      }
+
+      .odpowiedz::before {
+        content: counter(odpowiedz) ". ";
+        font-weight: bold;
+      }
